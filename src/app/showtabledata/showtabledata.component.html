@@ -1,0 +1,21 @@
+
+<h1>User List</h1>
+
+<table>
+  <tbody>
+    <th>Id</th>
+    <th>Name</th>
+    <th>User Name</th>
+    <th>Phone Number</th>
+  </tbody>
+  <tbody>
+    <ng-container *ngFor="let tabledata of tableData" >
+      <tr (click)="showDetails(tabledata)">
+        <td>{{ tabledata.id }}</td>
+        <td>{{ tabledata.name }}</td>
+        <td>{{ tabledata.username }}</td>
+        <td>{{ tabledata.phone }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
